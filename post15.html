@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>If your agents have to jump through hoops to help a patient, you've already broken something. — Della Miller</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: #faf8f4; color: #1a2e42; font-size: 16px; line-height: 1.7; }
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(250,248,244,0.95); backdrop-filter: blur(8px);
+    border-bottom: 1px solid #e0dcd5;
+    padding: 0 2rem; display: flex; align-items: center;
+    justify-content: space-between; height: 64px;
+  }
+  .nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: #1a2e42; text-decoration: none; }
+  .nav-back { font-size: 0.82rem; color: #6b6560; text-decoration: none; letter-spacing: 0.05em; display: flex; align-items: center; gap: 0.5rem; }
+  .nav-back:hover { color: #1d6b72; }
+  .article-wrap { max-width: 740px; margin: 0 auto; padding: 6rem 2rem 5rem; }
+  .article-meta { margin-bottom: 2rem; }
+  .article-tag {
+    display: inline-block; font-size: 0.72rem; font-weight: 500;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    padding: 0.35rem 0.85rem; margin-bottom: 1.25rem;
+    background: #e8f4f5; color: #1d6b72;
+  }
+  .article-week { font-size: 0.82rem; color: #6b6560; letter-spacing: 0.04em; margin-bottom: 1rem; }
+  .article-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.75rem, 4vw, 2.6rem);
+    font-weight: 500; line-height: 1.2; color: #1a2e42;
+    margin-bottom: 2rem;
+  }
+  .article-divider { border: none; border-top: 2px solid #1d6b72; width: 48px; margin-bottom: 2.5rem; }
+  .article-body p { font-size: 1.05rem; color: #3d3d3d; line-height: 1.85; margin-bottom: 1.5rem; }
+  .article-body p strong { color: #1a2e42; font-weight: 500; }
+  .closing-block {
+    margin-top: 3rem; padding: 1.5rem 1.75rem;
+    border-left: 3px solid #1d6b72;
+    background: #e8f4f5;
+  }
+  .closing-label { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #1d6b72; margin-bottom: 0.6rem; }
+  .closing-text { font-size: 1rem; font-style: italic; color: #1a2e42; line-height: 1.7; }
+  .cta-block { margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e0dcd5; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .btn-linkedin {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: #0077b5; color: white; padding: 0.85rem 1.75rem;
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em;
+    text-decoration: none; transition: background 0.2s;
+  }
+  .btn-linkedin:hover { background: #005885; }
+  .btn-back {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    background: transparent; color: #1a2e42; padding: 0.85rem 1.75rem;
+    font-size: 0.85rem; font-weight: 500; letter-spacing: 0.04em;
+    text-decoration: none; border: 1.5px solid #1a2e42; transition: all 0.2s;
+  }
+  .btn-back:hover { background: #1a2e42; color: white; }
+  .author-block { margin-top: 3rem; padding: 1.5rem; background: white; border: 1px solid #e0dcd5; display: flex; align-items: center; gap: 1.5rem; }
+  .author-name { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: #1a2e42; }
+  .author-title { font-size: 0.82rem; color: #6b6560; margin-top: 2px; }
+  .author-link { font-size: 0.82rem; color: #1d6b72; text-decoration: none; margin-top: 4px; display: block; }
+  .post-nav { margin-top: 2.5rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  .post-nav a { font-size: 0.82rem; color: #6b6560; text-decoration: none; letter-spacing: 0.04em; }
+  .post-nav a:hover { color: #1d6b72; }
+  footer { text-align: center; padding: 2rem; font-size: 0.78rem; color: #aaa; border-top: 1px solid #e0dcd5; margin-top: 4rem; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">Della Miller</a>
+  <a href="index.html#articles" class="nav-back">← All Articles</a>
+</nav>
+<div class="article-wrap">
+  <div class="article-meta">
+    <span class="article-tag">Team & people</span>
+    <div class="article-week">Post 15 &middot; Week 8 · Monday May 18</div>
+    <h1 class="article-title">If your agents have to jump through hoops to help a patient, you've already broken something.</h1>
+    <hr class="article-divider">
+  </div>
+  <div class="article-body">
+    <p>There's a question I ask every healthcare organization I work with:</p>
+    <p>When your contact team agent is on the phone with a patient in crisis — tears, anxiety, a family at its limit — can that agent reach out and get help immediately? Can they confidently promise the services your organization was built to deliver?</p>
+    <p>Or do they have to navigate an internal obstacle course before they can offer anything real?</p>
+    <p>The answer tells you more about your operating model than any metric on your dashboard.</p>
+    <p>When agents have the resources, the access, and the authority to meet a patient's need in the moment — their dedication to the work rises. Not because of a pep talk. Because the system is finally aligned with what they were hired to do.</p>
+    <p>The inverse is just as true, and far more costly.</p>
+    <p>Is your care team expected to turn business away before the family ever reaches a clinician? Because that decision — made at the front line, on a desperate call — doesn't just affect conversion. It affects morale, trust, and the people you're asking to carry it.</p>
+    <p>The calls that reach your referral team are not routine inquiries. They are often the hardest calls a family will make. Tears. Uncertainty. The exhaustion of not knowing where to turn.</p>
+    <p>A strong, confident, empowered agent can make that conversion feel simple — not because the situation is simple, but because they have what they need to meet it.</p>
+    <p>Most healthcare organizations significantly underestimate the investment a seasoned referral team carries. These are people who have held hundreds of those moments. Who know what the pauses mean. Who have learned, over time, how to earn trust in under three minutes.</p>
+    <p>That's not a soft skill. That's institutional capital.</p>
+    <p>And when you build an operating model that empowers them rather than constrains them, you protect that capital — and the patients who depend on it.</p>
+  </div>
+  
+  <div class="closing-block">
+    <div class="closing-label">Reflection</div>
+    <div class="closing-text">If your patients were asked — in hindsight — what the most difficult part of receiving care was, would the answer be your admission process?</div>
+  </div>
+  <div class="cta-block">
+    <a href="https://www.linkedin.com/in/dellamiller" target="_blank" class="btn-linkedin">
+      Join the discussion on LinkedIn
+    </a>
+    <a href="index.html#articles" class="btn-back">← All Articles</a>
+  </div>
+  <div class="author-block">
+    <div>
+      <div class="author-name">Della Miller</div>
+      <div class="author-title">VP, Referral Services &middot; Carrefour Associates LLC</div>
+      <a href="https://www.linkedin.com/in/dellamiller" target="_blank" class="author-link">linkedin.com/in/dellamiller</a>
+    </div>
+  </div>
+  <div class="post-nav">
+    <a href="post14.html">← Post 14</a>
+    <a href="post16.html">Post 16 →</a>
+  </div>
+</div>
+<footer>Della Miller &mdash; Healthcare Operations Leadership &mdash; dm2021crh.github.io/Della-Miller</footer>
+</body>
+</html>
