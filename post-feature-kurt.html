@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conversation the Hospice Industry Keeps Almost Having — Della Miller</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2e42;
+      --teal: #1d6b72;
+      --teal-light: #e8f4f5;
+      --sand: #f5f2ee;
+      --border: #e0dcd5;
+      --text: #2c2c2c;
+      --muted: #6b6560;
+      --tag-people: #1D9E75;
+      --tag-people-bg: #e8f7f2;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--sand);
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ── NAV ── */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--navy);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-back {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .nav-back:hover { color: var(--teal); }
+
+    /* ── LAYOUT ── */
+    .article-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3.5rem 2rem 5rem;
+    }
+
+    /* ── META ── */
+    .article-tag {
+      display: inline-block;
+      background: var(--tag-people-bg);
+      color: var(--tag-people);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .article-week {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+    }
+    .article-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .article-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 1.75rem;
+      line-height: 1.5;
+    }
+    .article-divider {
+      border: none;
+      border-top: 2px solid var(--tag-people);
+      width: 48px;
+      margin-bottom: 2.5rem;
+    }
+
+    /* ── BODY ── */
+    .article-body p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: var(--text);
+    }
+    .article-body p:first-child {
+      font-size: 1.08rem;
+      font-weight: 400;
+      color: #1e1e1e;
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tag-people);
+      margin-top: 2.75rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .pull-quote {
+      border-left: 3px solid var(--tag-people);
+      padding: 0.75rem 0 0.75rem 1.5rem;
+      margin: 2rem 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: var(--navy);
+      line-height: 1.45;
+    }
+
+    /* ── CLOSING REFLECTION ── */
+    .closing-block {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: var(--teal-light);
+      border-left: 3px solid var(--teal);
+    }
+    .closing-label {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+    .closing-text {
+      font-size: 0.95rem;
+      color: var(--navy);
+      line-height: 1.65;
+      font-style: italic;
+    }
+
+    /* ── CTA ── */
+    .cta-block {
+      margin-top: 2.75rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .btn-linkedin {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #0a66c2;
+      color: white;
+      padding: 0.85rem 1.75rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-linkedin:hover { background: #084f96; }
+    .btn-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: transparent;
+      color: var(--navy);
+      padding: 0.85rem 1.75rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 1.5px solid var(--navy);
+      transition: all 0.2s;
+    }
+    .btn-back:hover { background: var(--navy); color: white; }
+
+    /* ── AUTHOR ── */
+    .author-block {
+      margin-top: 3rem;
+      padding: 1.5rem;
+      background: white;
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .author-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .author-title {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .author-link {
+      font-size: 0.82rem;
+      color: var(--teal);
+      text-decoration: none;
+      margin-top: 4px;
+      display: block;
+    }
+    .author-link:hover { text-decoration: underline; }
+
+    /* ── POST NAV ── */
+    .post-nav {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .post-nav a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .post-nav a:hover { color: var(--teal); }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.78rem;
+      color: #aaa;
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+    }
+
+    @media (max-width: 600px) {
+      .article-wrap { padding: 2rem 1.25rem 4rem; }
+      .cta-block { flex-direction: column; }
+      .btn-linkedin, .btn-back { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Della Miller</a>
+  <a href="index.html#articles" class="nav-back">← All Articles</a>
+</nav>
+
+<div class="article-wrap">
+
+  <span class="article-tag">Team &amp; People</span>
+  <div class="article-week">Professional Feature &middot; June 2026</div>
+  <h1 class="article-title">The Conversation the Hospice Industry Keeps Almost Having</h1>
+  <p class="article-subtitle">On peer exchange, the knowledge we aren't circulating, and what it costs families when experienced operators don't compare notes.</p>
+  <hr class="article-divider">
+
+  <div class="article-body">
+
+    <p>I introduced myself to Kurt Kazanowski not long ago, and what followed was the kind of conversation that makes you realize how much useful knowledge this industry quietly holds — and how rarely it actually moves between the people who have it.</p>
+
+    <p>Kurt is the Managing Partner of Hospice Advisors and the author of <em>The Seven Pillars of Growth for Hospice, Home Care and Post Acute Care Organizations</em> — a framework for building the organizational capacity to serve more patients, grow census, and strengthen financial performance. He has spent three decades in hospice, home care, and acute care. He has built programs, restructured organizations, and developed the kind of operational philosophy that only forms when you have made enough expensive mistakes to understand what actually matters.</p>
+
+    <p>I've spent twenty years on the intake and contact center side of the same industry. My entry point was as Delaware Hospice's first non-clinical intake representative — the first voice a family heard when they called about whether their person qualified for hospice. From that chair I built systems, trained teams, and carried the operational logic of referral-to-admission conversion across organizations at very different stages of maturity. The work has always been the same: make the infrastructure around the patient as strong as the clinical care being delivered to them.</p>
+
+    <p>We came up separately. We built different things. And I discovered in our first conversation that we've been arguing for the same principles for most of our careers — just from different corners of the same building.</p>
+
+    <div class="pull-quote">"That's what peer conversation does. It gives your experience a sharper edge."</div>
+
+    <p class="section-label">When someone names what you've been living</p>
+
+    <p>There's a concept in Kurt's book that stopped me. He calls it the "Invisible Velvet Glove on the Spigot of Growth" — the soft, silent forces inside an organization that work against its own census growth without anyone ever formally naming them. Weekend admission reluctance. After-hours workarounds that calcify into cultural norms. Eligibility determination managed by one person instead of a system, creating a single point of failure that no one acknowledges until it breaks.</p>
+
+    <p>I had observed every one of those patterns across my career. I had built intake infrastructure specifically to counter them. I had coached supervisors through identifying and naming them, and designed documentation frameworks that made them visible before they became costly. What I hadn't done was give them a single label that precise.</p>
+
+    <p>That's what peer conversation does at this level. It doesn't teach you things you don't know. It gives your experience a sharper edge — and that edge changes what you can do with what you've already learned.</p>
+
+    <p>His Pillar #2 — moving the referral-inquiry-to-admission conversion rate — is exactly the problem my contact centers have been engineered to solve. His premise is precise: most hospice organizations invest in generating referrals while underinvesting in converting the ones they already receive. Moving from 66% to the 85% standard of practice — without a single additional marketing dollar — is an intake and infrastructure problem. It's a documentation problem. It's a training problem. It's the problem I've been building systems around since 2005.</p>
+
+    <p>He is looking at it from the growth strategy side. I've been looking at it from the contact center floor. The diagnosis is identical.</p>
+
+    <p class="section-label">The conversation the industry keeps almost having</p>
+
+    <p>Here's what I kept returning to after we spoke.</p>
+
+    <p>This industry has accumulated significant operational knowledge. Not theoretical knowledge — working knowledge. The kind that comes from having managed a referral team through a payer audit. From having rebuilt a contact center after a census collapse. From having watched a methodology that referral sources trusted get quietly dismantled by a leadership transition that didn't understand what it was replacing. From having trained an intake coordinator who became a director in her own right and took everything she learned with her.</p>
+
+    <p>That knowledge lives in the careers of experienced practitioners who are now in VP, director, and senior operations roles across dozens of hospice organizations. And most of it isn't in circulation.</p>
+
+    <p>We have conferences. We have trade publications. We have consultants — Kurt and Greg at Hospice Advisors among the genuinely good ones. What we don't have, with much consistency, is structured peer exchange between operators at the working level. Not panels where everyone is representing their organization's public position. Not roundtables where the format prevents candor. Actual conversation between people who have carried the weight of this work and want to compare notes honestly — about what failed, what held, what they'd build differently, and what the field keeps getting wrong.</p>
+
+    <div class="pull-quote">"The more administrative complexity has embedded itself into the logic of care delivery, the more the operator's role has quietly become about protecting the patient's experience from the system meant to serve them."</div>
+
+    <p>That is not a peripheral responsibility. It is the work. And the people doing it well need to be talking to each other.</p>
+
+    <p>The dysfunction families experience isn't created by any single policy or decision. It accumulates in the space between misaligned stakeholder expectations, undersupported intake teams, and organizations that have never mapped what the patient's experience of their own processes actually looks like. The operators who understand that are exactly who should be in consistent dialogue — and we have not built a consistent home for that conversation.</p>
+
+    <p class="section-label">Read Kurt's work</p>
+
+    <p><em>The Seven Pillars of Growth</em> is available at <a href="https://www.hospiceadvisors.com" target="_blank" style="color: var(--teal);">hospiceadvisors.com</a>. If you work in hospice growth strategy, business development, or operations leadership, it's a clear-eyed and practical framework written by someone who has done this work at every level. His Quarterly Growth Plan methodology — the discipline of committing a growth strategy to writing, measuring it against baseline, and reviewing it at 90-day intervals — is exactly the execution infrastructure most hospice organizations intend to build and rarely do.</p>
+
+    <p>Read it. Then find someone who has been in the work as long as you have, and have a real conversation about it. That's where the value compounds.</p>
+
+  </div>
+
+  <div class="closing-block">
+    <div class="closing-label">Reflection</div>
+    <div class="closing-text">What would structured peer exchange actually look like in this industry — not a conference, not a consulting engagement, but a working forum for experienced operators to share what they've built and what it cost them to build it? I don't think the industry has constructed that yet. I think the argument for doing so is overdue.</div>
+  </div>
+
+  <div class="cta-block">
+    <a href="https://www.linkedin.com/in/dellamiller" target="_blank" class="btn-linkedin">Join the discussion on LinkedIn</a>
+    <a href="index.html#articles" class="btn-back">← All Articles</a>
+  </div>
+
+  <div class="author-block">
+    <div>
+      <div class="author-name">Della Miller</div>
+      <div class="author-title">VP, Referral Services &middot; Carrefour Associates LLC</div>
+      <a href="https://www.linkedin.com/in/dellamiller" target="_blank" class="author-link">linkedin.com/in/dellamiller</a>
+    </div>
+  </div>
+
+  <div class="post-nav">
+    <a href="post16.html">← Post 16</a>
+    <span></span>
+  </div>
+
+</div>
+
+<footer>Della Miller &mdash; Healthcare Operations Leadership &mdash; carepathstrategies.com</footer>
+
+</body>
+</html>
