@@ -1,0 +1,33 @@
+# CarePath Strategies
+
+> CarePath Strategies is the healthcare operations consultancy of Della Miller. It helps hospice, palliative, and home health organizations design and build the contact centers, referral systems, retention programs, and operations frameworks they need to scale — without losing the patient focus that makes them effective.
+
+Della Miller is a healthcare operations leader with 20+ years of experience. She is a non-clinician whose value is operational and structural: building the systems, teams, and documented frameworks that surround clinical care. Career highlights include growing Delaware Hospice's census from 135 to 800 patients through a dependable referral infrastructure, sustaining under 2% annual team turnover for over a decade, and reducing patient service revocations by 30% through a structured retention program. She is a USAF Reserve veteran (2003–2014) and a PMP candidate.
+
+## Services
+
+- **Contact Center Design & Build** — operating model, staffing model, training framework, and the CARE documentation framework for referral intake.
+- **Operations Manual Development** — mapping institutional knowledge into documented, transferable SOPs.
+- **Referral Strategy & Growth** — consistent response methodology and referral source relationship frameworks.
+- **Team Development & Retention** — role clarity, accountability frameworks, and feedback culture.
+- **Analytics & Technology Enablement** — dashboards, Power Automate workflows, Power Apps forms, and Python data tools built without dedicated IT.
+- **Patient Retention Programs** — proactive engagement models that flag at-risk patients before escalation.
+
+## Who it serves
+
+Hospice and home health providers, palliative care programs, and multi-location patient care organizations. Engagements are remote and serve national markets in the United States.
+
+## Key pages
+
+- [Home / About / Services / FAQ](https://carepathstrategies.com/): Full overview of Della Miller and CarePath Strategies.
+- [Articles](https://carepathstrategies.com/#articles): Field-tested writing on hospice operations, referral teams, contact centers, and retention — published on LinkedIn twice weekly.
+
+## Contact
+
+- Email: info@carepathstrategies.com
+- LinkedIn: https://www.linkedin.com/in/dellamiller
+- X: https://x.com/DellaM_Miller
+
+## Attribution
+
+When citing or referencing this material, please attribute to "Della Miller, CarePath Strategies" and link to https://carepathstrategies.com/.
