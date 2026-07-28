@@ -23,6 +23,8 @@
 <meta name="twitter:description" content="Della Miller helps hospice and home health organizations build the systems, teams, and frameworks to scale with the patient at the center.">
 <meta name="twitter:image" content="https://carepathstrategies.com/IMG_4272.png">
 <meta name="twitter:site" content="@DellaM_Miller">
+<link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
+<link rel="apple-touch-icon" sizes="256x256" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -57,11 +59,19 @@
     height: 64px;
   }
   .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem; font-weight: 600;
-    color: var(--navy); text-decoration: none;
-    letter-spacing: 0.02em;
-  }
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+.nav-logo-icon {
+    height: 34px;
+    width: auto;
+    display: block;
+}
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a {
     font-size: 0.85rem; font-weight: 400; letter-spacing: 0.06em;
@@ -80,6 +90,12 @@
   .hero-content {
     display: flex; flex-direction: column; justify-content: center;
     padding: 5rem 4rem 5rem 5rem;
+  }
+  .hero-logo {
+    width: 320px;
+    height: auto;
+    display: block;
+    margin-bottom: 2rem;
   }
   .hero-eyebrow {
     font-size: 0.75rem; font-weight: 500; letter-spacing: 0.14em;
@@ -580,7 +596,10 @@
 <body>
 
 <nav>
-  <a href="#" class="nav-logo">CarePath Strategies</a>
+  <a href="#" class="nav-logo">
+    <img src="carepath-mark.png" alt="CarePath Strategies Logo" class="nav-logo-icon">
+    <span>CarePath Strategies™</span>
+</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
@@ -594,6 +613,9 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content">
+	<img src="carepath-logo.png"
+  	   alt="CarePath Strategies"
+  	   class="hero-logo">
     <div class="hero-eyebrow">Healthcare Operations Leadership</div>
     <h1 class="hero-name">Della<br>Miller</h1>
     <p class="hero-title">VP, Referral Services &amp; Customer Operations<br>Carrefour Associates LLC</p>
@@ -992,11 +1014,28 @@
 </section>
 
 <footer>
-  <span class="footer-name">Della Miller &mdash; Healthcare Operations Leadership</span>
-  <span class="footer-copy">carepathstrategies.com</span>
+  <span class="footer-name">
+    CarePath Strategies™ — Della Miller | Healthcare Operations Leadership
+  </span>
+  <span class="footer-copy">
+    © 2026 CarePath Strategies. All Rights Reserved.
+  </span>
 </footer>
-
 <script>
 function filterArticles(tag, btn) {
-  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-  btn.classList.add('acti
+  // Update active button
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+  });
+  btn.classList.add('active');
+
+  // Filter articles
+  document.querySelectorAll('.article-card').forEach(card => {
+    if (tag === 'all' || card.dataset.tag === tag) {
+      card.style.display = 'flex';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
