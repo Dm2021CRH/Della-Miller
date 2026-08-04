@@ -57,6 +57,21 @@
     line-height: 1.7;
   }
 
+.skip-link {
+  position: fixed;
+  top: -60px;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
   /* NAV */
   nav {
     position: fixed;
@@ -243,6 +258,15 @@
   .btn-outline:hover {
     background: var(--navy);
     color: var(--white);
+  }
+
+	a:focus-visible,
+	button:focus-visible,
+	.btn-primary:focus-visible,
+	.btn-outline:focus-visible,
+	.filter-btn:focus-visible {
+  	outline: 3px solid var(--teal);
+  	outline-offset: 3px;
   }
 
   .hero-image {
@@ -905,6 +929,13 @@
     text-decoration: underline;
   }
 
+address.contact-value {
+  font-style: normal;
+  margin: 0;
+  color: var(--white);
+  line-height: 1.7;
+}
+
   /* FOOTER */
   footer {
     background: #111e2b;
@@ -1319,6 +1350,7 @@
   </script>
  </head>
  <body>
+<a class="skip-link" href="#mission">Skip to content</a>
   <nav>
    <a class="nav-logo" href="#">
     <img alt="CarePath Strategies Logo" class="nav-logo-icon" src="carepath-mark.png"/>
@@ -1365,7 +1397,7 @@
    </ul>
   </nav>
   <!-- HERO -->
-  <section class="hero">
+  <header class="hero">
    <div class="hero-content">
     <img alt="CarePath Strategies" class="hero-logo" src="carepath-logo.png"/>
     <div class="hero-eyebrow">
@@ -1430,7 +1462,7 @@
    <div class="hero-image">
     <img alt="Della Miller" src="IMG_4272.png"/>
    </div>
-  </section>
+  </header>
   <!-- MISSION -->
   <section id="mission">
    <div class="mission-container">
@@ -2172,92 +2204,110 @@
     </details>
    </div>
   </section>
-  <!-- CONTACT -->
-  <section id="contact">
-   <div class="contact-inner">
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
     <div class="section-label">
-     Contact
+      Contact
     </div>
+
     <h2 class="section-heading">
-     Let's talk about your organization.
+      Let's talk about your organization.
     </h2>
+
     <p class="contact-text">
-     If you're a healthcare operator, hospice or home health leader, or multi-location patient care organization looking to build the systems and teams that carry your mission — I'd like to hear about what you're working on.
+      If you're a healthcare operator, hospice or home health leader, or multi-location patient care organization looking to build the systems and teams that carry your mission — I'd like to hear about what you're working on.
     </p>
+
     <div class="contact-grid">
-     <div class="contact-details">
-      <div class="contact-row">
-       <span class="contact-label">
-        Website
-       </span>
-       <span class="contact-value">
-        <a href="https://carepathstrategies.com" rel="noopener noreferrer" target="_blank">
-         carepathstrategies.com
-        </a>
-       </span>
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">
+            Website
+          </span>
+          <span class="contact-value">
+            <a href="https://carepathstrategies.com"
+               target="_blank"
+               rel="noopener noreferrer">
+              carepathstrategies.com
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Inquiry
+          </span>
+          <span class="contact-value">
+            <a href="#consultation">
+              Request a Consultation
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Phone
+          </span>
+          <span class="contact-value">
+            <a href="tel:+19016098480">
+              (901) 609-8480
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Address
+          </span>
+          <address class="contact-value">
+            1603 Capitol Ave Ste 415 PMB 722674
+            <br>
+            Cheyenne, WY 82001-4562
+          </address>
+        </div>
       </div>
-      <div class="contact-row">
-       <span class="contact-label">
-        Inquiry
-       </span>
-       <span class="contact-value">
-        <a href="#consultation">
-         Request a Consultation
-        </a>
-       </span>
+
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">
+            Location
+          </span>
+          <span class="contact-value">
+            Remote — Serving National Markets
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            LinkedIn
+          </span>
+          <span class="contact-value">
+            <a href="https://www.linkedin.com/in/dellamiller"
+               target="_blank"
+               rel="noopener noreferrer">
+              linkedin.com/in/dellamiller
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Currently
+          </span>
+          <span class="contact-value">
+            VP, Referral Services &amp; Customer Operations
+            <br>
+            Carrefour Associates LLC
+          </span>
+        </div>
       </div>
-      <div class="contact-row">
-       <span class="contact-label">
-        Phone
-       </span>
-       <span class="contact-value">
-        	<a href="tel:+19016098480">
-		901.609.8480
-		</a>
-       </span>
-      </div>
-      <div class="contact-row">
-       <span class="contact-label">
-        Address
-       </span>
-       <span class="contact-value">
-        1603 Capitol Ave Ste 415 PMB 722674
-        <br/>
-        Cheyenne, WY 82001-4562
-       </span>
-      </div>
-     </div>
-     <div class="contact-details">
-      <div class="contact-row">
-       <span class="contact-label">
-        Location
-       </span>
-       <span class="contact-value">
-        Remote — serving national markets
-       </span>
-      </div>
-      <div class="contact-row">
-       <span class="contact-label">
-        LinkedIn
-       </span>
-       <span class="contact-value">
-        <a href="https://www.linkedin.com/in/dellamiller" rel="noopener noreferrer" target="_blank">
-         linkedin.com/in/dellamiller
-        </a>
-       </span>
-      </div>
-      <div class="contact-row">
-       <span class="contact-label">
-        Currently
-       </span>
-       <span class="contact-value">
-        VP, Referral Services · Carrefour Associates LLC
-       </span>
-      </div>
-     </div>
     </div>
-   </div>
-  </section>
+  </div>
+</section>
+
   <!-- CONSULTATION -->
   <section id="consultation">
    <div class="consultation-container">
