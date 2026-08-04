@@ -998,6 +998,7 @@ address.contact-value {
 #consultation {
   background: var(--white);
   border-top: 1px solid var(--border);
+  scroll-margin-top: 80px;
 }
 
 .consultation-container {
@@ -1396,6 +1397,8 @@ address.contact-value {
     </li>
    </ul>
   </nav>
+
+
   <!-- HERO -->
   <header class="hero">
    <div class="hero-content">
@@ -1463,6 +1466,8 @@ address.contact-value {
     <img alt="Della Miller" src="IMG_4272.png"/>
    </div>
   </header>
+
+
   <!-- MISSION -->
   <section id="mission">
    <div class="mission-container">
@@ -1491,6 +1496,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <!-- ABOUT -->
   <section id="about">
    <div class="about-grid">
@@ -1601,6 +1608,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <!-- SERVICES -->
   <section id="services">
    <div class="section-label">
@@ -1681,6 +1690,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <!-- ARTICLES -->
   <section id="articles">
    <div class="section-label">
@@ -1899,6 +1910,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <!-- TECHNOLOGY -->
   <section id="technology">
    <div class="section-label">
@@ -2090,6 +2103,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <!-- FAQ -->
   <section id="faq">
    <div class="section-label">
@@ -2322,7 +2337,7 @@ address.contact-value {
     </p>
     <div class="consultation-grid">
      <div class="consultation-form">
-      <iframe frameborder="0" height="1400" loading="lazy" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSdZ4xKfiQMgBic-_04NPFEOWPStAVnsa2aNsDse1JThJcNV7Q/viewform?embedded=true" title="CarePath Strategies consultation request form" width="640">
+      <iframe id="consultationForm" frameborder="0" height="1400" loading="lazy" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSdZ4xKfiQMgBic-_04NPFEOWPStAVnsa2aNsDse1JThJcNV7Q/viewform?embedded=true" title="CarePath Strategies consultation request form" width="640">
        Loading…
       </iframe>
      </div>
@@ -2353,6 +2368,8 @@ address.contact-value {
     </div>
    </div>
   </section>
+
+
   <footer>
    <span class="footer-name">
     CarePath Strategies™ — Della Miller | Healthcare Operations Leadership
@@ -2361,8 +2378,10 @@ address.contact-value {
     © 2026 CarePath Strategies. All Rights Reserved.
    </span>
   </footer>
-  <script>
-   function filterArticles(tag, btn) {
+
+
+<script>
+function filterArticles(tag, btn) {
   document.querySelectorAll('.filter-btn').forEach(button => {
     button.classList.remove('active');
   });
@@ -2377,6 +2396,19 @@ address.contact-value {
     }
   });
 }
-  </script>
- </body>
+
+const consultationForm = document.getElementById('consultationForm');
+let consultationFormLoadCount = 0;
+
+consultationForm.addEventListener('load', () => {
+  consultationFormLoadCount += 1;
+
+  if (consultationFormLoadCount > 1) {
+    document.getElementById('consultation').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+});
+</script> </body>
 </html>
