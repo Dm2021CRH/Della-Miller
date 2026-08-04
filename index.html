@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CarePath Strategies — Della Miller | Healthcare Operations Consulting for Hospice &amp; Palliative Care</title>
-<meta name="description" content="CarePath Strategies is the healthcare operations consultancy of Della Miller — helping hospice, palliative, and home health organizations design contact centers, referral systems, retention programs, and operations frameworks that scale without losing the patient focus. 20+ years; 40% census growth; under 2% team turnover.">
-<meta name="author" content="Della Miller">
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-<link rel="canonical" href="https://carepathstrategies.com/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="CarePath Strategies">
-<meta property="og:title" content="CarePath Strategies — Healthcare Operations Consulting for Hospice &amp; Palliative Care">
-<meta property="og:description" content="Della Miller helps hospice, palliative, and home health organizations build contact centers, referral systems, and retention programs that scale with the patient at the center.">
-<meta property="og:url" content="https://carepathstrategies.com/">
-<meta property="og:image" content="https://carepathstrategies.com/IMG_4272.png">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CarePath Strategies — Healthcare Operations Consulting for Hospice &amp; Palliative Care">
-<meta name="twitter:description" content="Della Miller helps hospice and home health organizations build the systems, teams, and frameworks to scale with the patient at the center.">
-<meta name="twitter:image" content="https://carepathstrategies.com/IMG_4272.png">
-<meta name="twitter:site" content="@DellaM_Miller">
-<link rel="icon" type="image/png" sizes="256x256" href="favicon.png">
-<link rel="apple-touch-icon" sizes="256x256" href="favicon.png">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-
-<style>
-  :root {
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   CarePath Strategies — Della Miller | Healthcare Operations Consulting for Hospice &amp; Palliative Care
+  </title>
+  <meta content="CarePath Strategies is the healthcare operations consultancy of Della Miller — helping hospice, palliative, and home health organizations design contact centers, referral systems, retention programs, and operations frameworks that scale without losing the patient focus. 20+ years; 40% census growth; under 2% team turnover." name="description"/>
+  <meta content="Della Miller" name="author"/>
+  <meta content="index, follow, max-image-preview:large, max-snippet:-1" name="robots"/>
+  <link href="https://carepathstrategies.com/" rel="canonical"/>
+  <!-- Open Graph -->
+  <meta content="website" property="og:type"/>
+  <meta content="CarePath Strategies" property="og:site_name"/>
+  <meta content="CarePath Strategies — Healthcare Operations Consulting for Hospice &amp; Palliative Care" property="og:title"/>
+  <meta content="Della Miller helps hospice, palliative, and home health organizations build contact centers, referral systems, and retention programs that scale with the patient at the center." property="og:description"/>
+  <meta content="https://carepathstrategies.com/" property="og:url"/>
+  <meta content="https://carepathstrategies.com/IMG_4272.png" property="og:image"/>
+  <!-- Twitter -->
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="CarePath Strategies — Healthcare Operations Consulting for Hospice &amp; Palliative Care" name="twitter:title"/>
+  <meta content="Della Miller helps hospice and home health organizations build the systems, teams, and frameworks to scale with the patient at the center." name="twitter:description"/>
+  <meta content="https://carepathstrategies.com/IMG_4272.png" name="twitter:image"/>
+  <meta content="@DellaM_Miller" name="twitter:site"/>
+  <link href="favicon.png" rel="icon" sizes="256x256" type="image/png"/>
+  <link href="favicon.png" rel="apple-touch-icon" sizes="256x256"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+  <style>
+   :root {
     --navy: #1a2e42;
     --teal: #1d6b72;
     --teal-light: #e8f4f5;
@@ -57,6 +56,21 @@
     font-size: 16px;
     line-height: 1.7;
   }
+
+.skip-link {
+  position: fixed;
+  top: -60px;
+  left: 1rem;
+  z-index: 1000;
+  background: var(--navy);
+  color: var(--white);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
 
   /* NAV */
   nav {
@@ -246,6 +260,15 @@
     color: var(--white);
   }
 
+	a:focus-visible,
+	button:focus-visible,
+	.btn-primary:focus-visible,
+	.btn-outline:focus-visible,
+	.filter-btn:focus-visible {
+  	outline: 3px solid var(--teal);
+  	outline-offset: 3px;
+  }
+
   .hero-image {
     position: relative;
     overflow: hidden;
@@ -270,20 +293,6 @@
       rgba(29,107,114,0.3) 0%,
       rgba(26,46,66,0.4) 100%
     );
-  }
-
-  .hero-image-caption {
-    position: absolute;
-    bottom: 2rem;
-    left: 2rem;
-    right: 2rem;
-    z-index: 2;
-    color: white;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-style: italic;
-    line-height: 1.5;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
   }
 
   /* SECTIONS */
@@ -320,40 +329,116 @@
     margin-bottom: 1.5rem;
   }
 
-  /* MISSION */
-  #mission {
-    background: var(--white);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+/* MISSION */
+#mission {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.mission-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.mission-header {
+  text-align: left;
+}
+
+#mission .section-label {
+  justify-content: flex-start;
+}
+
+.mission-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--navy);
+  margin-bottom: 2.5rem;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.mission-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  padding: 2.5rem;
+  box-shadow: 0 8px 28px rgba(26, 46, 66, 0.06);
+}
+
+.mission-statement {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.45rem, 2vw, 1.8rem);
+  line-height: 1.75;
+  color: var(--warm-gray);
+  margin: 0;
+  text-align: left;
+}
+
+.mission-quote {
+  border: 1px solid var(--border);
+  padding: 2rem;
+  margin: 0;
+  background: transparent;
+  text-align: left;
+}
+
+.mission-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.3rem);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  text-align: left;
+}
+
+.mission-quote span {
+  display: block;
+  margin-top: 1.25rem;
+  text-align: right;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+@media (max-width: 700px)
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
-  .mission-container {
-    max-width: 950px;
-    margin: 0 auto;
-    text-align: center;
+  .mission-card {
+    padding: 2rem;
   }
 
-  #mission .section-label {
-    justify-content: center;
+  .mission-quote {
+    max-width: 600px;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .mission-card {
+    padding: 1.5rem;
   }
 
-  .mission-heading {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 4vw, 3.2rem);
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--navy);
-    margin-bottom: 2rem;
+  .mission-quote {
+    text-align: left;
+    margin-left: 0;
   }
-
-  .mission-statement {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.45rem, 2vw, 1.8rem);
-    line-height: 1.75;
-    color: var(--warm-gray);
-    max-width: 820px;
-    margin: 0 auto;
-  }
+}
 
   /* ABOUT */
   #about {
@@ -773,8 +858,16 @@
   }
 
   .contact-inner {
-    max-width: 700px;
+    width: 100%;
+    max-width: none;
   }
+
+  .contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
 
   #contact .section-label {
     color: #6ab8be;
@@ -804,7 +897,7 @@
 
   .contact-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.25rem;
     padding-bottom: 1.25rem;
     border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -835,6 +928,13 @@
   .contact-value a:hover {
     text-decoration: underline;
   }
+
+address.contact-value {
+  font-style: normal;
+  margin: 0;
+  color: var(--white);
+  line-height: 1.7;
+}
 
   /* FOOTER */
   footer {
@@ -894,6 +994,121 @@
     animation: fadeUp 0.6s ease 0.65s both;
   }
 
+/* CONSULTATION */
+#consultation {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 80px;
+}
+
+.consultation-container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.consultation-intro {
+  max-width: 700px;
+  margin-bottom: 2.5rem;
+  color: var(--warm-gray);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.consultation-form {
+  width: 640px;
+  max-width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.consultation-form iframe {
+  display: block;
+  width: 640px;
+  max-width: 100%;
+  height: 1400px;
+  margin: 0;
+  border: 0;
+}
+
+.consultation-grid {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.consultation-sidebar {
+    display: flex;
+    align-items: flex-start;
+    position: sticky;
+    top: 120px;
+    padding-top: 12px;
+}
+
+.consultation-card {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-top: 2px solid #e8710a; /* Google Forms orange */
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: none;
+}
+
+.consultation-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 1.5rem;
+}
+
+.consultation-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.consultation-card li {
+    position: relative;
+    padding-left: 1.8rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.7;
+    color: var(--warm-gray);
+}
+
+.consultation-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--teal);
+    font-weight: 600;
+}
+
+
+@media (max-width: 1100px) {
+  .consultation-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-form {
+    width: 100%;
+  }
+
+  .consultation-form iframe {
+    width: 100%;
+  }
+
+  .consultation-sidebar {
+    position: static;
+  }
+
+
+}
+
   /* RESPONSIVE */
   @media (max-width: 900px) {
     .hero {
@@ -939,6 +1154,11 @@
       gap: 1.25rem;
     }
 
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
     footer {
       padding: 1.5rem 2rem;
       flex-direction: column;
@@ -946,10 +1166,9 @@
       text-align: center;
     }
   }
-</style>
-
-<script type="application/ld+json">
-{
+  </style>
+  <script type="application/ld+json">
+   {
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -1129,669 +1348,885 @@
     }
   ]
 }
-</script>
-</head>
+  </script>
+ </head>
+ <body>
+<a class="skip-link" href="#mission">Skip to content</a>
+  <nav>
+   <a class="nav-logo" href="#">
+    <img alt="CarePath Strategies Logo" class="nav-logo-icon" src="carepath-mark.png"/>
+    <span>
+     CarePath Strategies™
+    </span>
+   </a>
+   <ul class="nav-links">
+    <li>
+     <a href="#mission">
+      Mission
+     </a>
+    </li>
+    <li>
+     <a href="#about">
+      About
+     </a>
+    </li>
+    <li>
+     <a href="#services">
+      Services
+     </a>
+    </li>
+    <li>
+     <a href="#articles">
+      Articles
+     </a>
+    </li>
+    <li>
+     <a href="#technology">
+      Technology
+     </a>
+    </li>
+    <li>
+     <a href="#faq">
+      FAQ
+     </a>
+    </li>
+    <li>
+     <a href="#contact">
+      Contact
+     </a>
+    </li>
+   </ul>
+  </nav>
 
-<body>
 
-<nav>
-  <a href="#" class="nav-logo">
-    <img src="carepath-mark.png" alt="CarePath Strategies Logo" class="nav-logo-icon">
-    <span>CarePath Strategies™</span>
-  </a>
-
-  <ul class="nav-links">
-    <li><a href="#mission">Mission</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#articles">Articles</a></li>
-    <li><a href="#technology">Technology</a></li>
-    <li><a href="#faq">FAQ</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-content">
-    <img
-      src="carepath-logo.png"
-      alt="CarePath Strategies"
-      class="hero-logo"
-    >
-
-    <div class="hero-eyebrow">Healthcare Operations Leadership</div>
-
+  <!-- HERO -->
+  <header class="hero">
+   <div class="hero-content">
+    <img alt="CarePath Strategies" class="hero-logo" src="carepath-logo.png"/>
+    <div class="hero-eyebrow">
+     Healthcare Operations Leadership
+    </div>
     <h1 class="hero-name">
-      Della<br>
-      Miller
+     Della
+     <br/>
+     Miller
     </h1>
-
     <p class="hero-title">
-      VP, Referral Services &amp; Customer Operations<br>
-      Carrefour Associates LLC
+     VP, Referral Services &amp; Customer Operations
+     <br/>
+     Carrefour Associates LLC
     </p>
-
     <p class="hero-bio">
-      Twenty years building the systems, teams, and frameworks that allow healthcare organizations to scale with the patient at the center of every decision.
+     Twenty years building the systems, teams, and frameworks that allow healthcare organizations to scale with the patient at the center of every decision.
     </p>
-
     <div class="hero-stats">
-      <div>
-        <div class="stat-number">40%</div>
-        <div class="stat-label">Census Growth</div>
+     <div>
+      <div class="stat-number">
+       40%
       </div>
-
-      <div>
-        <div class="stat-number">&lt;2%</div>
-        <div class="stat-label">Team Turnover</div>
+      <div class="stat-label">
+       Census Growth
       </div>
-
-      <div>
-        <div class="stat-number">3,500</div>
-        <div class="stat-label">Staff Trained</div>
+     </div>
+     <div>
+      <div class="stat-number">
+       &lt;2%
       </div>
-
-      <div>
-        <div class="stat-number">20+</div>
-        <div class="stat-label">Years Experience</div>
+      <div class="stat-label">
+       Team Turnover
       </div>
+     </div>
+     <div>
+      <div class="stat-number">
+       3,500
+      </div>
+      <div class="stat-label">
+       Staff Trained
+      </div>
+     </div>
+     <div>
+      <div class="stat-number">
+       20+
+      </div>
+      <div class="stat-label">
+       Years Experience
+      </div>
+     </div>
     </div>
-
     <div class="hero-cta">
-      <a href="#contact" class="btn-primary">Get in Touch</a>
-      <a href="#articles" class="btn-outline">Read My Work</a>
+     <a class="btn-primary" href="#contact">
+      Get in Touch
+     </a>
+     <a class="btn-outline" href="#articles">
+      Read My Work
+     </a>
     </div>
-  </div>
+   </div>
+   <div class="hero-image">
+    <img alt="Della Miller" src="IMG_4272.png"/>
+   </div>
+  </header>
 
-  <div class="hero-image">
-    <img src="IMG_4272.png" alt="Della Miller">
 
-    <div class="hero-image-caption">
-      "Well-built systems need experience behind them and courage in front of them."
-    </div>
-  </div>
-</section>
-
-<!-- MISSION -->
-<section id="mission">
-  <div class="mission-container">
-    <div class="section-label">Mission</div>
-
-    <h2 class="mission-heading">
+  <!-- MISSION -->
+  <section id="mission">
+   <div class="mission-container">
+    <div class="mission-header">
+     <div class="section-label">
+      Mission
+     </div>
+     <h2 class="mission-heading">
       Why CarePath Strategies Exists
-    </h2>
+     </h2>
+    </div>
+    <div class="mission-grid">
+     <div class="mission-card">
+      <p class="mission-statement">
+       CarePath Strategies exists to strengthen healthcare organizations through principled leadership, disciplined governance, and operational excellence by delivering practical strategies that improve organizational performance, empower healthcare professionals, and advance exceptional patient care.
+      </p>
+     </div>
+     <aside class="mission-quote">
+      <p>
+       “Well-built systems need experience behind them and courage in front of them.”
+      </p>
+      <span>
+       — Della Miller
+      </span>
+     </aside>
+    </div>
+   </div>
+  </section>
 
-    <p class="mission-statement">
-      CarePath Strategies exists to strengthen healthcare organizations through principled leadership, disciplined governance, and operational excellence by delivering practical strategies that improve organizational performance, empower healthcare professionals, and advance exceptional patient care.
-    </p>
-  </div>
-</section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="about-grid">
+  <!-- ABOUT -->
+  <section id="about">
+   <div class="about-grid">
     <div class="about-text">
-      <div class="section-label">About</div>
-
-      <h2 class="section-heading">
-        The methodology exists to serve the mission. Not the other way around.
-      </h2>
-
-      <p>
-        I started my career as a <strong>911 operator</strong> — which gave me an early and intimate understanding of what happens when a person in crisis reaches a call taker who is no longer carrying the weight of the moment. That understanding has shaped every contact center, referral team, and operations framework I've built since.
-      </p>
-
-      <p>
-        In February 2005 I joined <strong>Delaware Hospice</strong> as their first non-clinical intake representative — the first point of contact for families navigating one of the most difficult decisions of their lives. I coordinated every aspect of admission to hospice: schedule management, barrier to admission resolution, training, SOP maintenance, staff orientation, documentation, productivity reporting, and coordination of information for the full supportive team assigned to each family. I progressed from Coordinator to Referral Center Supervisor during my tenure.
-      </p>
-
-      <p>
-        Under that model, Delaware Hospice grew from <strong>135 to 800 patients</strong> — centralizing the DELMARVA region and expanding to two GIP facilities. That growth wasn't incidental. It was the direct result of building a referral infrastructure that referral sources could depend on, consistently, every time they called.
-      </p>
-
-      <p>
-        That experience became the proof of concept for everything I've built since. At Crossroads Hospice I saw what it looks like when a rapidly scaling organization keeps patient focus at the helm of every decision. At Carrefour Associates I built the contact center, the retention programs, the operating frameworks, and the technology infrastructure from the ground up — and sustained them across fifteen years of national growth.
-      </p>
-
-      <p>
-        I build systems that carry the mission. I build teams that carry the patient. And I build the frameworks that make both sustainable when the pressure is highest.
-      </p>
-
-      <p>
-        I am a <strong>USAF Reserve Veteran</strong> (2003–2014) and a PMP candidate with the Project Management Institute.
-      </p>
-
-      <div class="credentials">
-        <span class="credential-tag">Hospice &amp; Palliative Care</span>
-        <span class="credential-tag">Contact Center Design</span>
-        <span class="credential-tag">HIPAA / CMS Compliance</span>
-        <span class="credential-tag">Power Automate</span>
-        <span class="credential-tag">Power Apps</span>
-        <span class="credential-tag">Python</span>
-        <span class="credential-tag">PMP (In Progress)</span>
-        <span class="credential-tag">USAF Veteran</span>
-        <span class="credential-tag">Delaware Hospice Alumni</span>
-      </div>
+     <div class="section-label">
+      About
+     </div>
+     <h2 class="section-heading">
+      The methodology exists to serve the mission. Not the other way around.
+     </h2>
+     <p>
+      I started my career as a
+      <strong>
+       911 operator
+      </strong>
+      — which gave me an early and intimate understanding of what happens when a person in crisis reaches a call taker who is no longer carrying the weight of the moment. That understanding has shaped every contact center, referral team, and operations framework I've built since.
+     </p>
+     <p>
+      In February 2005 I joined
+      <strong>
+       Delaware Hospice
+      </strong>
+      as their first non-clinical intake representative — the first point of contact for families navigating one of the most difficult decisions of their lives. I coordinated every aspect of admission to hospice: schedule management, barrier to admission resolution, training, SOP maintenance, staff orientation, documentation, productivity reporting, and coordination of information for the full supportive team assigned to each family. I progressed from Coordinator to Referral Center Supervisor during my tenure.
+     </p>
+     <p>
+      Under that model, Delaware Hospice grew from
+      <strong>
+       135 to 800 patients
+      </strong>
+      — centralizing the DELMARVA region and expanding to two GIP facilities. That growth wasn't incidental. It was the direct result of building a referral infrastructure that referral sources could depend on, consistently, every time they called.
+     </p>
+     <p>
+      That experience became the proof of concept for everything I've built since. At Crossroads Hospice I saw what it looks like when a rapidly scaling organization keeps patient focus at the helm of every decision. At Carrefour Associates I built the contact center, the retention programs, the operating frameworks, and the technology infrastructure from the ground up — and sustained them across fifteen years of national growth.
+     </p>
+     <p>
+      I build systems that carry the mission. I build teams that carry the patient. And I build the frameworks that make both sustainable when the pressure is highest.
+     </p>
+     <p>
+      I am a
+      <strong>
+       USAF Reserve Veteran
+      </strong>
+      (2003–2014) and a PMP candidate with the Project Management Institute.
+     </p>
+     <div class="credentials">
+      <span class="credential-tag">
+       Hospice &amp; Palliative Care
+      </span>
+      <span class="credential-tag">
+       Contact Center Design
+      </span>
+      <span class="credential-tag">
+       HIPAA / CMS Compliance
+      </span>
+      <span class="credential-tag">
+       Power Automate
+      </span>
+      <span class="credential-tag">
+       Power Apps
+      </span>
+      <span class="credential-tag">
+       Python
+      </span>
+      <span class="credential-tag">
+       PMP (In Progress)
+      </span>
+      <span class="credential-tag">
+       USAF Veteran
+      </span>
+      <span class="credential-tag">
+       Delaware Hospice Alumni
+      </span>
+     </div>
     </div>
-
     <div class="about-achievements">
-      <div class="achievement-card">
-        <div class="achievement-number">40%</div>
-        <div class="achievement-desc">
-          Census growth through strategic lifecycle management, proactive engagement, and optimized patient journey design at Carrefour Associates.
-        </div>
+     <div class="achievement-card">
+      <div class="achievement-number">
+       40%
       </div>
-
-      <div class="achievement-card">
-        <div class="achievement-number">&lt;2%</div>
-        <div class="achievement-desc">
-          Annual team turnover sustained across 11+ years of operations — through structured development, clear expectations, and consistent accountability.
-        </div>
+      <div class="achievement-desc">
+       Census growth through strategic lifecycle management, proactive engagement, and optimized patient journey design at Carrefour Associates.
       </div>
-
-      <div class="achievement-card">
-        <div class="achievement-number">30%</div>
-        <div class="achievement-desc">
-          Reduction in patient service revocations annually from program inception through the Patient Retention Program — 45% within the first 3 months.
-        </div>
+     </div>
+     <div class="achievement-card">
+      <div class="achievement-number">
+       &lt;2%
       </div>
-
-      <div class="achievement-card">
-        <div class="achievement-number">$30K+</div>
-        <div class="achievement-desc">
-          Monthly savings achieved through voice services, fax network, and SharePoint infrastructure projects — replacing external software contracts with internal solutions.
-        </div>
+      <div class="achievement-desc">
+       Annual team turnover sustained across 11+ years of operations — through structured development, clear expectations, and consistent accountability.
       </div>
+     </div>
+     <div class="achievement-card">
+      <div class="achievement-number">
+       30%
+      </div>
+      <div class="achievement-desc">
+       Reduction in patient service revocations annually from program inception through the Patient Retention Program — 45% within the first 3 months.
+      </div>
+     </div>
+     <div class="achievement-card">
+      <div class="achievement-number">
+       $30K+
+      </div>
+      <div class="achievement-desc">
+       Monthly savings achieved through voice services, fax network, and SharePoint infrastructure projects — replacing external software contracts with internal solutions.
+      </div>
+     </div>
     </div>
-  </div>
-</section>
+   </div>
+  </section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="section-label">Services</div>
 
-  <h2 class="section-heading">
+  <!-- SERVICES -->
+  <section id="services">
+   <div class="section-label">
+    Services
+   </div>
+   <h2 class="section-heading">
     Where I can help your organization.
-  </h2>
-
-  <p class="services-intro">
+   </h2>
+   <p class="services-intro">
     I work with healthcare operators, hospice and home health organizations, and multi-location patient care companies who need the systems, frameworks, and team structures to scale without losing what makes them effective.
-  </p>
-
-  <div class="services-grid">
+   </p>
+   <div class="services-grid">
     <div class="service-card">
-      <div class="service-num">01</div>
-      <div class="service-title">Contact Center Design &amp; Build</div>
-      <div class="service-desc">
-        Operating model, staffing model, training framework, and growth foundations — built from scratch or rebuilt from the ground up. Includes the CARE documentation framework for referral intake.
-      </div>
+     <div class="service-num">
+      01
+     </div>
+     <div class="service-title">
+      Contact Center Design &amp; Build
+     </div>
+     <div class="service-desc">
+      Operating model, staffing model, training framework, and growth foundations — built from scratch or rebuilt from the ground up. Includes the CARE documentation framework for referral intake.
+     </div>
     </div>
-
     <div class="service-card">
-      <div class="service-num">02</div>
-      <div class="service-title">Operations Manual Development</div>
-      <div class="service-desc">
-        Mapping your institutional knowledge into documented, transferable systems — goal, SOP reference, assumed knowledge, scope, and panic button processes for every task entry.
-      </div>
+     <div class="service-num">
+      02
+     </div>
+     <div class="service-title">
+      Operations Manual Development
+     </div>
+     <div class="service-desc">
+      Mapping your institutional knowledge into documented, transferable systems — goal, SOP reference, assumed knowledge, scope, and panic button processes for every task entry.
+     </div>
     </div>
-
     <div class="service-card">
-      <div class="service-num">03</div>
-      <div class="service-title">Referral Strategy &amp; Growth</div>
-      <div class="service-desc">
-        Consistent response methodology, referral source relationship frameworks, and the structural decisions that protect responsiveness as volume and service lines change.
-      </div>
+     <div class="service-num">
+      03
+     </div>
+     <div class="service-title">
+      Referral Strategy &amp; Growth
+     </div>
+     <div class="service-desc">
+      Consistent response methodology, referral source relationship frameworks, and the structural decisions that protect responsiveness as volume and service lines change.
+     </div>
     </div>
-
     <div class="service-card">
-      <div class="service-num">04</div>
-      <div class="service-title">Team Development &amp; Retention</div>
-      <div class="service-desc">
-        Role clarity, accountability frameworks, training discipline, and the feedback culture that builds future leaders rather than managing turnover.
-      </div>
+     <div class="service-num">
+      04
+     </div>
+     <div class="service-title">
+      Team Development &amp; Retention
+     </div>
+     <div class="service-desc">
+      Role clarity, accountability frameworks, training discipline, and the feedback culture that builds future leaders rather than managing turnover.
+     </div>
     </div>
-
     <div class="service-card">
-      <div class="service-num">05</div>
-      <div class="service-title">Analytics &amp; Technology Enablement</div>
-      <div class="service-desc">
-        Self-built dashboards, Power Automate workflows, Power Apps forms, and Python-based data tools — designed for healthcare operations without dedicated IT support.
-      </div>
+     <div class="service-num">
+      05
+     </div>
+     <div class="service-title">
+      Analytics &amp; Technology Enablement
+     </div>
+     <div class="service-desc">
+      Self-built dashboards, Power Automate workflows, Power Apps forms, and Python-based data tools — designed for healthcare operations without dedicated IT support.
+     </div>
     </div>
-
     <div class="service-card">
-      <div class="service-num">06</div>
-      <div class="service-title">Patient Retention Programs</div>
-      <div class="service-desc">
-        Proactive engagement models that identify patients at risk of service revocation before escalation — built on data, staffed by empowered teams, and measured against outcomes that matter.
-      </div>
+     <div class="service-num">
+      06
+     </div>
+     <div class="service-title">
+      Patient Retention Programs
+     </div>
+     <div class="service-desc">
+      Proactive engagement models that identify patients at risk of service revocation before escalation — built on data, staffed by empowered teams, and measured against outcomes that matter.
+     </div>
     </div>
-  </div>
-</section>
+   </div>
+  </section>
 
-<!-- ARTICLES -->
-<section id="articles">
-  <div class="section-label">Articles</div>
 
-  <h2 class="section-heading">
+  <!-- ARTICLES -->
+  <section id="articles">
+   <div class="section-label">
+    Articles
+   </div>
+   <h2 class="section-heading">
     Writing from twenty years in the work.
-  </h2>
-
-  <p class="articles-intro">
+   </h2>
+   <p class="articles-intro">
     These posts are drawn directly from experience — building contact centers, managing referral teams, navigating insurance barriers, and training the people who hold families at their most vulnerable moments. Published on LinkedIn, 2x per week.
-  </p>
-
-  <div class="article-filters">
-    <button class="filter-btn active" onclick="filterArticles('all', this)">All</button>
-    <button class="filter-btn" onclick="filterArticles('systems', this)">Systems</button>
-    <button class="filter-btn" onclick="filterArticles('people', this)">Team &amp; People</button>
-    <button class="filter-btn" onclick="filterArticles('patient', this)">Patient Focus</button>
-    <button class="filter-btn" onclick="filterArticles('concept', this)">Concept</button>
-  </div>
-
-  <div class="articles-grid" id="articlesGrid">
+   </p>
+   <div class="article-filters">
+    <button class="filter-btn active" onclick="filterArticles('all', this)">
+     All
+    </button>
+    <button class="filter-btn" onclick="filterArticles('systems', this)">
+     Systems
+    </button>
+    <button class="filter-btn" onclick="filterArticles('people', this)">
+     Team &amp; People
+    </button>
+    <button class="filter-btn" onclick="filterArticles('patient', this)">
+     Patient Focus
+    </button>
+    <button class="filter-btn" onclick="filterArticles('concept', this)">
+     Concept
+    </button>
+   </div>
+   <div class="articles-grid" id="articlesGrid">
     <div class="article-card" data-tag="concept" onclick="location.href='post1.html'">
-      <span class="article-tag tag-concept">Concept</span>
-      <div class="article-title">
-        The number one complaint from referral sources isn't about clinical care. It's about consistency.
-      </div>
-      <div class="article-week">Post 1 &middot; Week 1</div>
+     <span class="article-tag tag-concept">
+      Concept
+     </span>
+     <div class="article-title">
+      The number one complaint from referral sources isn't about clinical care. It's about consistency.
+     </div>
+     <div class="article-week">
+      Post 1 · Week 1
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post2.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        Can a Case Manager serve as an assessment RN for a day? Absolutely. Do they want to? Not at all.
-      </div>
-      <div class="article-week">Post 2 &middot; Week 1</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      Can a Case Manager serve as an assessment RN for a day? Absolutely. Do they want to? Not at all.
+     </div>
+     <div class="article-week">
+      Post 2 · Week 1
+     </div>
     </div>
-
     <div class="article-card" data-tag="systems" onclick="location.href='post3.html'">
-      <span class="article-tag tag-systems">Systems</span>
-      <div class="article-title">
-        In hospice, scale isn't about the bottom line. It's about how far your reach extends into communities where someone is suffering alone.
-      </div>
-      <div class="article-week">Post 3 &middot; Week 2</div>
+     <span class="article-tag tag-systems">
+      Systems
+     </span>
+     <div class="article-title">
+      In hospice, scale isn't about the bottom line. It's about how far your reach extends into communities where someone is suffering alone.
+     </div>
+     <div class="article-week">
+      Post 3 · Week 2
+     </div>
     </div>
-
     <div class="article-card" data-tag="patient" onclick="location.href='post4.html'">
-      <span class="article-tag tag-patient">Patient Focus</span>
-      <div class="article-title">
-        If insurance is the first question your contact team asks a family calling about hospice, it tells that family exactly what your organization values most.
-      </div>
-      <div class="article-week">Post 4 &middot; Week 2</div>
+     <span class="article-tag tag-patient">
+      Patient Focus
+     </span>
+     <div class="article-title">
+      If insurance is the first question your contact team asks a family calling about hospice, it tells that family exactly what your organization values most.
+     </div>
+     <div class="article-week">
+      Post 4 · Week 2
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post5.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        I may have a concept of what the end product looks like. My team provides the specifics. That distinction is how you build future leaders.
-      </div>
-      <div class="article-week">Post 5 &middot; Week 3</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      I may have a concept of what the end product looks like. My team provides the specifics. That distinction is how you build future leaders.
+     </div>
+     <div class="article-week">
+      Post 5 · Week 3
+     </div>
     </div>
-
     <div class="article-card" data-tag="systems" onclick="location.href='post6.html'">
-      <span class="article-tag tag-systems">Systems</span>
-      <div class="article-title">
-        A referral team is not a cost center. It's a clinical touchpoint.
-      </div>
-      <div class="article-week">Post 6 &middot; Week 3</div>
+     <span class="article-tag tag-systems">
+      Systems
+     </span>
+     <div class="article-title">
+      A referral team is not a cost center. It's a clinical touchpoint.
+     </div>
+     <div class="article-week">
+      Post 6 · Week 3
+     </div>
     </div>
-
     <div class="article-card" data-tag="concept" onclick="location.href='post7.html'">
-      <span class="article-tag tag-concept">Concept</span>
-      <div class="article-title">
-        Understanding the role of every stakeholder before you design a single process.
-      </div>
-      <div class="article-week">Post 7 &middot; Week 4</div>
+     <span class="article-tag tag-concept">
+      Concept
+     </span>
+     <div class="article-title">
+      Understanding the role of every stakeholder before you design a single process.
+     </div>
+     <div class="article-week">
+      Post 7 · Week 4
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post8.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        Retention has less to do with feeling like a work family and more to do with teamwork. Those are not the same thing.
-      </div>
-      <div class="article-week">Post 8 &middot; Week 4</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      Retention has less to do with feeling like a work family and more to do with teamwork. Those are not the same thing.
+     </div>
+     <div class="article-week">
+      Post 8 · Week 4
+     </div>
     </div>
-
     <div class="article-card" data-tag="systems" onclick="location.href='post9.html'">
-      <span class="article-tag tag-systems">Systems</span>
-      <div class="article-title">
-        The operations manual doesn't replace judgment. It reserves judgment for the moments that actually need it.
-      </div>
-      <div class="article-week">Post 9 &middot; Week 5</div>
+     <span class="article-tag tag-systems">
+      Systems
+     </span>
+     <div class="article-title">
+      The operations manual doesn't replace judgment. It reserves judgment for the moments that actually need it.
+     </div>
+     <div class="article-week">
+      Post 9 · Week 5
+     </div>
     </div>
-
     <div class="article-card" data-tag="patient" onclick="location.href='post10.html'">
-      <span class="article-tag tag-patient">Patient Focus</span>
-      <div class="article-title">
-        Families don't leave hospice organizations because they weren't cared for. They leave because what they experienced didn't match what they believed was promised.
-      </div>
-      <div class="article-week">Post 10 &middot; Week 5</div>
+     <span class="article-tag tag-patient">
+      Patient Focus
+     </span>
+     <div class="article-title">
+      Families don't leave hospice organizations because they weren't cared for. They leave because what they experienced didn't match what they believed was promised.
+     </div>
+     <div class="article-week">
+      Post 10 · Week 5
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post11.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        After 1,000 calls, even the most devastating situations can start to feel routine. That's not a character flaw. It's a point of failure.
-      </div>
-      <div class="article-week">Post 11 &middot; Week 6</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      After 1,000 calls, even the most devastating situations can start to feel routine. That's not a character flaw. It's a point of failure.
+     </div>
+     <div class="article-week">
+      Post 11 · Week 6
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post12.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        When your contact team is underperforming, look at the feedback they are receiving before you look at the team.
-      </div>
-      <div class="article-week">Post 12 &middot; Week 6</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      When your contact team is underperforming, look at the feedback they are receiving before you look at the team.
+     </div>
+     <div class="article-week">
+      Post 12 · Week 6
+     </div>
     </div>
-
     <div class="article-card" data-tag="concept" onclick="location.href='post13.html'">
-      <span class="article-tag tag-concept">Concept</span>
-      <div class="article-title">
-        When you change a methodology that referral sources have come to trust, they notice before you do.
-      </div>
-      <div class="article-week">Post 13 &middot; Week 7</div>
+     <span class="article-tag tag-concept">
+      Concept
+     </span>
+     <div class="article-title">
+      When you change a methodology that referral sources have come to trust, they notice before you do.
+     </div>
+     <div class="article-week">
+      Post 13 · Week 7
+     </div>
     </div>
-
     <div class="article-card" data-tag="patient" onclick="location.href='post14.html'">
-      <span class="article-tag tag-patient">Patient Focus</span>
-      <div class="article-title">
-        She sat in the parking lot for a week before she called.
-      </div>
-      <div class="article-week">Post 14 &middot; Week 7</div>
+     <span class="article-tag tag-patient">
+      Patient Focus
+     </span>
+     <div class="article-title">
+      She sat in the parking lot for a week before she called.
+     </div>
+     <div class="article-week">
+      Post 14 · Week 7
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post15.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        If your agents have to jump through hoops to help a patient, you've already broken something.
-      </div>
-      <div class="article-week">Post 15 &middot; Week 8</div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      If your agents have to jump through hoops to help a patient, you've already broken something.
+     </div>
+     <div class="article-week">
+      Post 15 · Week 8
+     </div>
     </div>
-
     <div class="article-card" data-tag="concept" onclick="location.href='post16.html'">
-      <span class="article-tag tag-concept">Concept</span>
-      <div class="article-title">
-        Well-built systems and processes need experience behind them and courage in front of them.
-      </div>
-      <div class="article-week">Post 16 &middot; Week 8</div>
+     <span class="article-tag tag-concept">
+      Concept
+     </span>
+     <div class="article-title">
+      Well-built systems and processes need experience behind them and courage in front of them.
+     </div>
+     <div class="article-week">
+      Post 16 · Week 8
+     </div>
     </div>
-
     <div class="article-card" data-tag="people" onclick="location.href='post-feature-kurt.html'">
-      <span class="article-tag tag-people">Team &amp; People</span>
-      <div class="article-title">
-        The conversation the hospice industry keeps almost having.
-      </div>
-      <div class="article-excerpt">
-        Professional Feature · June 2026
-      </div>
+     <span class="article-tag tag-people">
+      Team &amp; People
+     </span>
+     <div class="article-title">
+      The conversation the hospice industry keeps almost having.
+     </div>
+     <div class="article-excerpt">
+      Professional Feature · June 2026
+     </div>
     </div>
-  </div>
-</section>
+   </div>
+  </section>
 
-<!-- TECHNOLOGY -->
-<section id="technology">
-  <div class="section-label">Technology</div>
 
-  <h2 class="section-heading">
+  <!-- TECHNOLOGY -->
+  <section id="technology">
+   <div class="section-label">
+    Technology
+   </div>
+   <h2 class="section-heading">
     Built without a dedicated IT team.
-  </h2>
-
-  <p class="tech-intro">
+   </h2>
+   <p class="tech-intro">
     Every tool below was designed and deployed solo in a live healthcare operations environment — while managing a VP-level role. Self-taught, applied to real business problems, and built to last.
-  </p>
-
-  <div class="tech-grid">
+   </p>
+   <div class="tech-grid">
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">01</div>
-        <span class="tech-tag">Analytics</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       01
       </div>
-
-      <div class="tech-title">
-        Patient Assessment Analytics Report
-      </div>
-
-      <div class="tech-desc">
-        Processed 541 assessment submissions across 424 unique patients — barrier analysis, RN performance dashboards, PPS score risk flags, and six strategic recommendations in boardroom-ready format.
-      </div>
-
-      <div class="tech-impact">
-        Surfaced "Family Not Ready" as #1 admission barrier at 18.9% of submissions
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Word</span>
-        <span class="tech-pill">Excel</span>
-        <span class="tech-pill">Dashboard</span>
-      </div>
+      <span class="tech-tag">
+       Analytics
+      </span>
+     </div>
+     <div class="tech-title">
+      Patient Assessment Analytics Report
+     </div>
+     <div class="tech-desc">
+      Processed 541 assessment submissions across 424 unique patients — barrier analysis, RN performance dashboards, PPS score risk flags, and six strategic recommendations in boardroom-ready format.
+     </div>
+     <div class="tech-impact">
+      Surfaced "Family Not Ready" as #1 admission barrier at 18.9% of submissions
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Word
+      </span>
+      <span class="tech-pill">
+       Excel
+      </span>
+      <span class="tech-pill">
+       Dashboard
+      </span>
+     </div>
     </div>
-
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">02</div>
-        <span class="tech-tag">Reporting</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       02
       </div>
-
-      <div class="tech-title">
-        Marketer &amp; Referral Source Performance Report
-      </div>
-
-      <div class="tech-desc">
-        Multi-tab Excel workbook analyzing 2024–2025 referral data across marketer books — conversion rates, referral source breakdowns, non-admit analysis, and time-to-assessment distribution patterns.
-      </div>
-
-      <div class="tech-impact">
-        Enabled targeted coaching at the individual marketer level
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Excel</span>
-        <span class="tech-pill">Data Modeling</span>
-      </div>
+      <span class="tech-tag">
+       Reporting
+      </span>
+     </div>
+     <div class="tech-title">
+      Marketer &amp; Referral Source Performance Report
+     </div>
+     <div class="tech-desc">
+      Multi-tab Excel workbook analyzing 2024–2025 referral data across marketer books — conversion rates, referral source breakdowns, non-admit analysis, and time-to-assessment distribution patterns.
+     </div>
+     <div class="tech-impact">
+      Enabled targeted coaching at the individual marketer level
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Excel
+      </span>
+      <span class="tech-pill">
+       Data Modeling
+      </span>
+     </div>
     </div>
-
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">03</div>
-        <span class="tech-tag">Automation</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       03
       </div>
-
-      <div class="tech-title">
-        Daily Census Automation Flow
-      </div>
-
-      <div class="tech-desc">
-        Scheduled Power Automate flow replacing 45 minutes of daily manual outreach — Adaptive Card forms to Teams, supervisor approval routing, automatic SharePoint write, non-response flagging.
-      </div>
-
-      <div class="tech-impact">
-        Submission compliance from ~70% to 95% within 30 days
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Power Automate</span>
-        <span class="tech-pill">Teams</span>
-        <span class="tech-pill">SharePoint</span>
-      </div>
+      <span class="tech-tag">
+       Automation
+      </span>
+     </div>
+     <div class="tech-title">
+      Daily Census Automation Flow
+     </div>
+     <div class="tech-desc">
+      Scheduled Power Automate flow replacing 45 minutes of daily manual outreach — Adaptive Card forms to Teams, supervisor approval routing, automatic SharePoint write, non-response flagging.
+     </div>
+     <div class="tech-impact">
+      Submission compliance from ~70% to 95% within 30 days
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Power Automate
+      </span>
+      <span class="tech-pill">
+       Teams
+      </span>
+      <span class="tech-pill">
+       SharePoint
+      </span>
+     </div>
     </div>
-
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">04</div>
-        <span class="tech-tag">Data Entry</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       04
       </div>
-
-      <div class="tech-title">
-        Power Apps Multi-List Referral Entry Form
-      </div>
-
-      <div class="tech-desc">
-        Unified Power Apps form connected to three separate SharePoint lists — resolved broken dropdown functionality, standardized data entry across three referral teams, eliminated free-text corruption in analytics.
-      </div>
-
-      <div class="tech-impact">
-        Eliminated data inconsistencies breaking downstream reporting
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Power Apps</span>
-        <span class="tech-pill">SharePoint</span>
-      </div>
+      <span class="tech-tag">
+       Data Entry
+      </span>
+     </div>
+     <div class="tech-title">
+      Power Apps Multi-List Referral Entry Form
+     </div>
+     <div class="tech-desc">
+      Unified Power Apps form connected to three separate SharePoint lists — resolved broken dropdown functionality, standardized data entry across three referral teams, eliminated free-text corruption in analytics.
+     </div>
+     <div class="tech-impact">
+      Eliminated data inconsistencies breaking downstream reporting
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Power Apps
+      </span>
+      <span class="tech-pill">
+       SharePoint
+      </span>
+     </div>
     </div>
-
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">05</div>
-        <span class="tech-tag">Python</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       05
       </div>
-
-      <div class="tech-title">
-        Account Data Deduplication &amp; Master List Builder
-      </div>
-
-      <div class="tech-desc">
-        Python-driven cleanup workflow with custom HTML review interface — identified 51 issues across ~1,000 entries, location-aware logic, side-by-side analyst review tool, full audit trail.
-      </div>
-
-      <div class="tech-impact">
-        Preserved 49 location-specific accounts across 19 facility groups
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Python</span>
-        <span class="tech-pill">HTML</span>
-        <span class="tech-pill">Fuzzy Matching</span>
-      </div>
+      <span class="tech-tag">
+       Python
+      </span>
+     </div>
+     <div class="tech-title">
+      Account Data Deduplication &amp; Master List Builder
+     </div>
+     <div class="tech-desc">
+      Python-driven cleanup workflow with custom HTML review interface — identified 51 issues across ~1,000 entries, location-aware logic, side-by-side analyst review tool, full audit trail.
+     </div>
+     <div class="tech-impact">
+      Preserved 49 location-specific accounts across 19 facility groups
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Python
+      </span>
+      <span class="tech-pill">
+       HTML
+      </span>
+      <span class="tech-pill">
+       Fuzzy Matching
+      </span>
+     </div>
     </div>
-
     <div class="tech-card">
-      <div class="tech-card-header">
-        <div class="tech-card-num">06</div>
-        <span class="tech-tag">Real-Time</span>
+     <div class="tech-card-header">
+      <div class="tech-card-num">
+       06
       </div>
-
-      <div class="tech-title">
-        Real-Time Referral Status Notification System
-      </div>
-
-      <div class="tech-desc">
-        Power Automate flow triggered by SharePoint changes — routes tailored notifications to support departments via email and clinical leadership via Teams the moment an assessment status updates. No polling, no manual check-ins.
-      </div>
-
-      <div class="tech-impact">
-        Eliminated chart audit compliance misses; enabled mobile census management
-      </div>
-
-      <div class="tech-stack">
-        <span class="tech-pill">Power Automate</span>
-        <span class="tech-pill">SharePoint</span>
-        <span class="tech-pill">Teams</span>
-        <span class="tech-pill">Outlook</span>
-      </div>
+      <span class="tech-tag">
+       Real-Time
+      </span>
+     </div>
+     <div class="tech-title">
+      Real-Time Referral Status Notification System
+     </div>
+     <div class="tech-desc">
+      Power Automate flow triggered by SharePoint changes — routes tailored notifications to support departments via email and clinical leadership via Teams the moment an assessment status updates. No polling, no manual check-ins.
+     </div>
+     <div class="tech-impact">
+      Eliminated chart audit compliance misses; enabled mobile census management
+     </div>
+     <div class="tech-stack">
+      <span class="tech-pill">
+       Power Automate
+      </span>
+      <span class="tech-pill">
+       SharePoint
+      </span>
+      <span class="tech-pill">
+       Teams
+      </span>
+      <span class="tech-pill">
+       Outlook
+      </span>
+     </div>
     </div>
-  </div>
-</section>
+   </div>
+  </section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="section-label">FAQ</div>
 
-  <h2 class="section-heading">
+  <!-- FAQ -->
+  <section id="faq">
+   <div class="section-label">
+    FAQ
+   </div>
+   <h2 class="section-heading">
     Questions I'm asked most.
-  </h2>
-
-  <p class="faq-intro">
+   </h2>
+   <p class="faq-intro">
     Straight answers about what CarePath Strategies does, who it's for, and the experience behind the work.
-  </p>
-
-  <div class="faq-list">
+   </p>
+   <div class="faq-list">
     <details class="faq-item">
-      <summary>What does CarePath Strategies do?</summary>
-
-      <div class="faq-answer">
-        <p>
-          CarePath Strategies is the healthcare operations consultancy of Della Miller. It helps <strong>hospice, palliative, and home health organizations</strong> design and build the contact centers, referral systems, retention programs, and operations frameworks they need to grow — without losing the patient focus that makes them effective.
-        </p>
-
-        <p>
-          The work spans operating models, staffing and training structures, documented SOPs, and the analytics and automation that hold it all together.
-        </p>
-      </div>
+     <summary>
+      What does CarePath Strategies do?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       CarePath Strategies is the healthcare operations consultancy of Della Miller. It helps
+       <strong>
+        hospice, palliative, and home health organizations
+       </strong>
+       design and build the contact centers, referral systems, retention programs, and operations frameworks they need to grow — without losing the patient focus that makes them effective.
+      </p>
+      <p>
+       The work spans operating models, staffing and training structures, documented SOPs, and the analytics and automation that hold it all together.
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>Do you need to be a clinician to lead hospice operations?</summary>
-
-      <div class="faq-answer">
-        <p>
-          No. CarePath Strategies works on the <strong>non-clinical infrastructure</strong> that surrounds clinical care — intake, referral response, contact center operations, team development, and documentation systems. The value is operational and structural: building the systems that let clinical teams do their best work.
-        </p>
-      </div>
+     <summary>
+      Do you need to be a clinician to lead hospice operations?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       No. CarePath Strategies works on the
+       <strong>
+        non-clinical infrastructure
+       </strong>
+       that surrounds clinical care — intake, referral response, contact center operations, team development, and documentation systems. The value is operational and structural: building the systems that let clinical teams do their best work.
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>What experience is needed to scale a hospice referral center effectively?</summary>
-
-      <div class="faq-answer">
-        <p>
-          It takes a referral model built for <strong>consistency</strong>. The thing referral sources value most isn't clinical reassurance — it's the same dependable response every time they call.
-        </p>
-
-        <p>
-          Scaling a referral center means building that consistency into structure: response methodology, role clarity, documentation, and accountability, so responsiveness holds as volume and service lines change. This is the model that grew Delaware Hospice from 135 to 800 patients.
-        </p>
-      </div>
+     <summary>
+      What experience is needed to scale a hospice referral center effectively?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       It takes a referral model built for
+       <strong>
+        consistency
+       </strong>
+       . The thing referral sources value most isn't clinical reassurance — it's the same dependable response every time they call.
+      </p>
+      <p>
+       Scaling a referral center means building that consistency into structure: response methodology, role clarity, documentation, and accountability, so responsiveness holds as volume and service lines change. This is the model that grew Delaware Hospice from 135 to 800 patients.
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>How can you reduce patient revocations in hospice or home health?</summary>
-
-      <div class="faq-answer">
-        <p>
-          Revocations usually trace back to a gap between what families expected and what they experienced. A structured patient retention program identifies at-risk patients <strong>before escalation</strong> through proactive engagement, empowered teams, and data — an approach that reduced annual service revocations by 30% (45% within the first three months).
-        </p>
-      </div>
+     <summary>
+      How can you reduce patient revocations in hospice or home health?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       Revocations usually trace back to a gap between what families expected and what they experienced. A structured patient retention program identifies at-risk patients
+       <strong>
+        before escalation
+       </strong>
+       through proactive engagement, empowered teams, and data — an approach that reduced annual service revocations by 30% (45% within the first three months).
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>What does a strong contact center operating model look like for hospice and palliative care?</summary>
-
-      <div class="faq-answer">
-        <p>
-          It starts with the recognition that a referral team is <strong>not a cost center — it's a clinical touchpoint</strong>. A strong model pairs a clear operating and staffing structure with a consistent response methodology, a documentation framework for intake, and training discipline that keeps quality steady under pressure. The goal is a center referral sources can depend on every time.
-        </p>
-      </div>
+     <summary>
+      What does a strong contact center operating model look like for hospice and palliative care?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       It starts with the recognition that a referral team is
+       <strong>
+        not a cost center — it's a clinical touchpoint
+       </strong>
+       . A strong model pairs a clear operating and staffing structure with a consistent response methodology, a documentation framework for intake, and training discipline that keeps quality steady under pressure. The goal is a center referral sources can depend on every time.
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>How do you develop and retain operations teams in high-pressure healthcare environments?</summary>
-
-      <div class="faq-answer">
-        <p>
-          Retention is less about feeling like a "work family" and more about <strong>teamwork built on role clarity, clear expectations, and consistent accountability</strong>. With structured development and a real feedback culture, this approach sustained under 2% annual turnover across more than a decade — by building future leaders rather than managing churn.
-        </p>
-      </div>
+     <summary>
+      How do you develop and retain operations teams in high-pressure healthcare environments?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       Retention is less about feeling like a "work family" and more about
+       <strong>
+        teamwork built on role clarity, clear expectations, and consistent accountability
+       </strong>
+       . With structured development and a real feedback culture, this approach sustained under 2% annual turnover across more than a decade — by building future leaders rather than managing churn.
+      </p>
+     </div>
     </details>
-
     <details class="faq-item">
-      <summary>What kinds of organizations does CarePath Strategies work with?</summary>
-
-      <div class="faq-answer">
-        <p>
-          Hospice and home health providers, palliative care programs, and multi-location patient care organizations — typically those scaling referral and contact center operations, or formalizing institutional knowledge into transferable systems. Engagements are remote and serve national markets.
-        </p>
-      </div>
+     <summary>
+      What kinds of organizations does CarePath Strategies work with?
+     </summary>
+     <div class="faq-answer">
+      <p>
+       Hospice and home health providers, palliative care programs, and multi-location patient care organizations — typically those scaling referral and contact center operations, or formalizing institutional knowledge into transferable systems. Engagements are remote and serve national markets.
+      </p>
+     </div>
     </details>
-  </div>
-</section>
+   </div>
+  </section>
+
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <div class="section-label">Contact</div>
+    <div class="section-label">
+      Contact
+    </div>
 
     <h2 class="section-heading">
       Let's talk about your organization.
@@ -1801,65 +2236,149 @@
       If you're a healthcare operator, hospice or home health leader, or multi-location patient care organization looking to build the systems and teams that carry your mission — I'd like to hear about what you're working on.
     </p>
 
-    <div class="contact-details">
-      <div class="contact-row">
-        <span class="contact-label">Website</span>
-        <span class="contact-value">
-          <a href="https://carepathstrategies.com" target="_blank">
-            carepathstrategies.com
-          </a>
-        </span>
+    <div class="contact-grid">
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">
+            Website
+          </span>
+          <span class="contact-value">
+            <a href="https://carepathstrategies.com"
+               target="_blank"
+               rel="noopener noreferrer">
+              carepathstrategies.com
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Inquiry
+          </span>
+          <span class="contact-value">
+            <a href="#consultation">
+              Request a Consultation
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Phone
+          </span>
+          <span class="contact-value">
+            <a href="tel:+19016098480">
+              (901) 609-8480
+            </a>
+          </span>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">
+            Address
+          </span>
+          <address class="contact-value">
+            1603 Capitol Ave Ste 415 PMB 722674
+            <br>
+            Cheyenne, WY 82001-4562
+          </address>
+        </div>
       </div>
 
-      <div class="contact-row">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">
-          <a href="https://forms.gle/Spfa5ZvLHD2KwyPz6">
-            Request a Consultation
-          </a>
-        </span>
-      </div>
+      <div class="contact-details">
+        <div class="contact-row">
+          <span class="contact-label">
+            Location
+          </span>
+          <span class="contact-value">
+            Remote — Serving National Markets
+          </span>
+        </div>
 
-      <div class="contact-row">
-        <span class="contact-label">Phone</span>
-        <span class="contact-value">901.609.8480</span>
-      </div>
+        <div class="contact-row">
+          <span class="contact-label">
+            LinkedIn
+          </span>
+          <span class="contact-value">
+            <a href="https://www.linkedin.com/in/dellamiller"
+               target="_blank"
+               rel="noopener noreferrer">
+              linkedin.com/in/dellamiller
+            </a>
+          </span>
+        </div>
 
-      <div class="contact-row">
-        <span class="contact-label">Location</span>
-        <span class="contact-value">
-          Remote — serving national markets
-        </span>
-      </div>
-
-      <div class="contact-row">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">
-          <a href="https://www.linkedin.com/in/dellamiller" target="_blank">
-            linkedin.com/in/dellamiller
-          </a>
-        </span>
-      </div>
-
-      <div class="contact-row">
-        <span class="contact-label">Currently</span>
-        <span class="contact-value">
-          VP, Referral Services &middot; Carrefour Associates LLC
-        </span>
+        <div class="contact-row">
+          <span class="contact-label">
+            Currently
+          </span>
+          <span class="contact-value">
+            VP, Referral Services &amp; Customer Operations
+            <br>
+            Carrefour Associates LLC
+          </span>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  <span class="footer-name">
-    CarePath Strategies™ — Della Miller | Healthcare Operations Leadership
-  </span>
+  <!-- CONSULTATION -->
+  <section id="consultation">
+   <div class="consultation-container">
+    <div class="section-label">
+     Consultation
+    </div>
+    <h2 class="section-heading">
+     Request a Consultation
+    </h2>
+    <p class="consultation-intro">
+     What are the goals and operational challenges you are working to solve? We review every inquiry personally and will respond as soon as possible.
+    </p>
+    <div class="consultation-grid">
+     <div class="consultation-form">
+      <iframe id="consultationForm" frameborder="0" height="1400" loading="lazy" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSdZ4xKfiQMgBic-_04NPFEOWPStAVnsa2aNsDse1JThJcNV7Q/viewform?embedded=true" title="CarePath Strategies consultation request form" width="640">
+       Loading…
+      </iframe>
+     </div>
+     <aside class="consultation-sidebar">
+      <div class="consultation-card">
+       <h3>
+        What to Expect
+       </h3>
+       <ul>
+        <li>
+         Every inquiry is personally reviewed.
+        </li>
+        <li>
+         We'll respond within one business day.
+        </li>
+        <li>
+         Your initial consultation is complimentary.
+        </li>
+        <li>
+         Remote engagements are available nationwide.
+        </li>
+        <li>
+         Every discussion is treated as confidential.
+        </li>
+       </ul>
+      </div>
+     </aside>
+    </div>
+   </div>
+  </section>
 
-  <span class="footer-copy">
+
+  <footer>
+   <span class="footer-name">
+    CarePath Strategies™ — Della Miller | Healthcare Operations Leadership
+   </span>
+   <span class="footer-copy">
     © 2026 CarePath Strategies. All Rights Reserved.
-  </span>
-</footer>
+   </span>
+  </footer>
+
 
 <script>
 function filterArticles(tag, btn) {
@@ -1877,7 +2396,19 @@ function filterArticles(tag, btn) {
     }
   });
 }
-</script>
 
-</body>
+const consultationForm = document.getElementById('consultationForm');
+let consultationFormLoadCount = 0;
+
+consultationForm.addEventListener('load', () => {
+  consultationFormLoadCount += 1;
+
+  if (consultationFormLoadCount > 1) {
+    document.getElementById('consultation').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+});
+</script> </body>
 </html>
